@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="author" content="Manuel Jaime" />
+    <meta
+      name="description"
+      content="Este é um simples e interactivo formuláro de contactos, baseado no Frontend Mentor Challenges. Sinta-se livre para experimentar o programa"
+    />
+    <title>Frontend Mentor - Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form__box">
+        <h1 class="title">Contact Us</h1>
+        <div class="row-2">
+          <div class="input__box first__name">
+            <label for="first__name"
+              >First Name <span class="star">*</span></label
+            >
+            <input type="text" id="first__name" />
+            <p class="error"></p>
+          </div>
+          <div class="input__box last__name">
+            <label for="last__name"
+              >Last Name <span class="star">*</span></label
+            >
+            <input type="text" id="last__name" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="row-1">
+          <div class="input__box email__address">
+            <label for="email__address"
+              >Email Address <span class="star">*</span></label
+            >
+            <input type="text" id="email__address" />
+            <p class="error"></p>
+          </div>
+        </div>
+
+        <div class="query__types">
+          <label>Query Type <span class="star">*</span></label>
+
+          <div class="check__boxes">
+            <div class="check__box">
+              <input type="radio" id="general__enquiry" />
+              <label for="general__enquiry"> General Enquiry</label>
+            </div>
+            <div class="check__box">
+              <input type="radio" id="support__request" />
+              <label for="support__request">Support Request</label>
+            </div>
+          </div>
+          <p class="error"></p>
+        </div>
+
+        <div class="row-1">
+          <div class="input__box message">
+            <label for="message">Message <span class="star">*</span></label>
+            <textarea id="message"></textarea>
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="consent__section">
+          <div>
+            <div id="check-btn"></div>
+            <label
+              >I consent to being contacted by the team<span class="star"
+                >*</span
+              ></label
+              >
+          </div>
+
+          <p class="error"></p>
+        </div>
+        <div id="submit__btn">
+          <button type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="sucess__state__section">
+      <h2 class="subtitle">
+        <img src="assets/images/icon-success-check.svg" alt="" />
+        Message Sent!
+      </h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
